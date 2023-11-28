@@ -6,3 +6,4 @@ if __name__ == "__main__":
     num2 = float(input("Gib die zweite Zahl ein: "))
     result = add_numbers(num1, num2)
     print(f"Das Ergebnis ist: {result}")
+
