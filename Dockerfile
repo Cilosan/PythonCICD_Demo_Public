@@ -1,0 +1,14 @@
+# Verwende das offizielle Python-Image als Basis
+FROM python:3.10
+
+# Setze das Arbeitsverzeichnis im Container
+WORKDIR /app
+
+# Kopiere die lokalen Dateien in das Container-Verzeichnis
+COPY . /app
+
+# Installiere Python-Abhängigkeiten
+RUN pip install -r requirements.txt
+
+# Definiere den Befehl, der beim Starten des Containers ausgeführt wird
+CMD ["python", "app.py"]
