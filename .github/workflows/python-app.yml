@@ -35,8 +35,9 @@ jobs:
   austester:
     runs-on: ubuntu-latest
     steps:
-      - name: ein kleiner test
-        run: "hello world"
+    - name: ein kleiner test
+      run: python -c "print('Hello World')"
+
 
   docker:
     runs-on: ubuntu-latest
