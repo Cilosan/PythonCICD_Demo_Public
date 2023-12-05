@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Installiere Python-Abhängigkeiten
-RUN pip install
+RUN pip install -r requirements.txt
 
 # Definiere den Befehl, der beim Starten des Containers ausgeführt wird
 CMD ["python", "python_app.py"]
